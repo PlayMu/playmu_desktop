@@ -16,12 +16,14 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
+  bitsdojo_window: ^0.1.6
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^6.0.0
+  very_good_analysis: ^10.0.0
 
 flutter:
   uses-material-design: true
