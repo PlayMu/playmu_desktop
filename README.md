@@ -1,16 +1,36 @@
-# playmu
+<img width="100" height="100" src="readme/logo.png" alt="playmu project logo">
 
-A new Flutter project.
+# PlayMu | Desktop
 
-## Getting Started
+![License](https://img.shields.io/github/license/PlayMu/playmu_desktop)
+![Contributions Status](https://img.shields.io/badge/contributions-Closed-red)
 
-This project is a starting point for a Flutter application.
+PlayMu Frontend.
 
-A few resources to get you started if this is your first Flutter project:
+## 🧰 Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Coming soon...
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🧑‍💻 Technologies
+
+[![Made with Dart](https://img.shields.io/badge/frontend-Dart-purple)]((https://dart.dev/))
+[![Made with Flutter](https://img.shields.io/badge/frontend-Flutter-purple)]((https://flutter.dev/))
+[![style: very good analysis](https://img.shields.io/badge/code_style-Very_Good_Analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
+
+* [Dart(>=3.9.2)](https://dart.dev/)
+* [Flutter(>=3.35.7)](https://flutter.dev/)
+
+## 🖥️ Platforms
+
+* Linux(snap) 🟡
+* macOS(>=12.4) 🟡
+* Windows(>=10.0) ✅
+
+## 📷 Screenshots
+
+Coming soon...
+
+## 📜 Credits
+
+* SoftYes TI [\<softyes.com.br\>](https://softyes.com.br)
+* João Sereia [\<joao.sereia@softyes.com.br\>](mailto:joao.sereia@softyes.com.br)
