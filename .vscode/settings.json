@@ -1,6 +1,8 @@
 {
   "cSpell.words": [
+    "cupertino",
     "playmu",
     "softyes"
-  ]
+  ],
+  "dart.flutterSdkPath": ".fvm/versions/3.35.7"
 }
