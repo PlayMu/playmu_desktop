@@ -1,7 +1,22 @@
+import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/material.dart';
+
+const _title = 'PlayMu';
 
 void main() {
   runApp(const MyApp());
+
+  doWhenWindowReady(() {
+    const initialSize = Size(1280, 720);
+
+    appWindow.title = _title;
+    appWindow.size = initialSize;
+    appWindow.minSize = initialSize;
+    appWindow.alignment = Alignment.center;
+    appWindow
+      ..maximize()
+      ..show();
+  });
 }
 
 class MyApp extends StatelessWidget {
@@ -10,7 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: _title,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
@@ -20,7 +35,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({required this.title, super.key});
 
   final String title;
 

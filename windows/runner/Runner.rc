@@ -95,7 +95,7 @@ BEGIN
             VALUE "InternalName", "playmu" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 br.com.softyes. All rights reserved." "\0"
             VALUE "OriginalFilename", "playmu.exe" "\0"
-            VALUE "ProductName", "playmu" "\0"
+            VALUE "ProductName", "PlayMu" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
