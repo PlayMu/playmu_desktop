@@ -1,0 +1,17 @@
+launcher_icons:
+  web:
+    generate: false
+  ios:
+    generate: false
+  android:
+    generate: false
+  linux:
+    generate: true
+    generate_snap: true
+    image_path: assets/icons/icon_linux.png
+  macos:
+    generate: true
+    image_path: assets/icons/icon_macos.png
+  windows:
+    generate: true
+    image_path: assets/icons/icon_windows.png

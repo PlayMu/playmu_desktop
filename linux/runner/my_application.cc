@@ -3,6 +3,7 @@
 #include <flutter_linux/flutter_linux.h>
 
 #include "flutter/generated_plugin_registrant.h"
+#include <gio/gio.h>
 
 struct _MyApplication {
   GtkApplication parent_instance;
@@ -17,11 +18,22 @@ static void first_frame_cb(MyApplication* self, FlView* view) {
 }
 
 // Implements GApplication::activate.
+static gchar* get_flutter_asset_path(const gchar* asset_path) {
+  g_autofree gchar* executable = g_file_read_link("/proc/self/exe", NULL);
+  if (executable == NULL) {
+    return g_strdup(asset_path);
+  }
+  g_autofree gchar* executable_dir = g_path_get_dirname(executable);
+  return g_build_filename(executable_dir, "data", "flutter_assets", asset_path, NULL);
+}
+
 static void my_application_activate(GApplication* application) {
   MyApplication* self = MY_APPLICATION(application);
 
   GtkWindow* window =
       GTK_WINDOW(gtk_application_window_new(GTK_APPLICATION(application)));
+  g_autofree gchar* linux_icon_path = get_flutter_asset_path("assets/icons/icon_linux.png");
+  gtk_window_set_icon_from_file(window, linux_icon_path, NULL);
   gtk_window_set_default_size(window, 1280, 720);
 
   // If you want to use a header bar, uncomment the following lines.

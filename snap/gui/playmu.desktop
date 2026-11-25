@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=playmu
+Comment=playmu
+Exec=playmu
+Icon=${SNAP}/meta/gui/playmu.png
+Terminal=false
+Type=Application
+Categories=Utility;
+StartupWMClass=br.com.softyes.playmu

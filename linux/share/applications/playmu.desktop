@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=playmu
+Comment=playmu
+Exec=playmu
+Icon=playmu
+Terminal=false
+Type=Application
+Categories=Utility;
+StartupWMClass=br.com.softyes.playmu

@@ -23,7 +23,11 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^6.0.0
+  launcher_icons: ^0.16.0
   very_good_analysis: ^11.0.0
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/icons/icon_linux.png

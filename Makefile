@@ -1,6 +1,13 @@
-.PHONY: upgrade clean
+.PHONY: icons upgrade clean
 
 default: upgrade
+
+icons:
+	@echo "Generating launcher icons..."
+	@dart run launcher_icons
+	@rm -rf macos/AppIcon.icon
+	@cp -r assets/icons/icon_macos.icon macos/AppIcon.icon
+	@make clean
 
 upgrade:
 	@echo "Upgrading packages..."
