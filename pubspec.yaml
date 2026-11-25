@@ -1,0 +1,29 @@
+name: playmu
+description: "Big Picture app for managing game emulators on macOS, Linux, and Windows."
+
+publish_to: "none"
+homepage: https://softyes.com.br
+repository: https://github.com/PlayMu/playmu_desktop
+issue_tracker: https://github.com/PlayMu/playmu_desktop/issues
+
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.14.0
+  flutter: ^3.50.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  material_ui: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  very_good_analysis: ^11.0.0
+
+flutter:
+  uses-material-design: true
